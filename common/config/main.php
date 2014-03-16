@@ -6,6 +6,7 @@ return array(
 	'aliases' => array(
 		'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
 		'common' => dirname(__FILE__) . '/../..' . '/common',
+		'console' => dirname(__FILE__) . '/../..' . '/console',
 		'backend' => dirname(__FILE__) . '/../..' . '/backend',
 		'api' => dirname(__FILE__) . '/../..' . '/api',
 		'vendor' => dirname(__FILE__) . '/../..' . '/common/lib/vendor'

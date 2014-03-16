@@ -38,7 +38,11 @@ return array(
 				'assets' => array(
 					$root . '/frontend/www',
 					$root . '/backend/www',
-				)
+				),
+                'dist' => array(
+                    $root . '/frontend',
+                    $root . '/backend',
+                ),
 			),
 			'files' => array(
 				// files to merge the main configuration file with

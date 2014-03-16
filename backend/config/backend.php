@@ -31,4 +31,7 @@ return array(
 			'allowAutoLogin' => true,
 		),
 	),
+    'params' => array(
+        'assets.base' => 'backend.dist'
+    ),
 );

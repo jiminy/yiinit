@@ -1,18 +1,15 @@
 <?php
-/**
- *
- * SiteController class
- *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @copyright 2013 2amigOS! Consultation Group LLC
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
- */
+
+namespace frontend\controllers;
+
+use frontend\components\web\Controller;
+use frontend\Yii;
+
 class SiteController extends Controller
 {
 	public function actionIndex()
 	{
+        $this->getAssetsBase();
 		$this->render('index');
 	}
 

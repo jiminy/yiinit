@@ -26,8 +26,10 @@ index
 /console/runtime
 
 /backend/www/assets
+/backend/dist
 /backend/runtime
 /frontend/www/assets
+/frontend/dist
 /frontend/runtime
 
 # configuration files

@@ -28,9 +28,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii": "dev-master",
-        "2amigos/yiistrap": "dev-master",
-        "2amigos/yiiwheels": "dev-master"
+        "yiisoft/yii": "dev-master"
     },
     "autoload": {
         "psr-0": {

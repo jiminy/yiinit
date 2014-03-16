@@ -37,6 +37,13 @@ class Initializer
 
         $config = self::config($configName, $mergeWith);
 
+        if (!empty($config['aliases'])) {
+            foreach ($config['aliases'] as $alias => $path) {
+                \Yii::setPathOfAlias($alias, $path);
+            }
+            unset($config['aliases']);
+        }
+
         if (php_sapi_name() !== 'cli') // aren't we in console?
             $app = \Yii::createApplication($application ? : 'CWebApplication', $config);
         else {

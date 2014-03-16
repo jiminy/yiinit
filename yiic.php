@@ -15,4 +15,4 @@ Yiinitializr\Helpers\Initializer::create('./console', 'console', array(
 	'./common/config/main.php',
 	'./common/config/env.php',
 	'./common/config/local.php',
-))->run();
+), '\console\components\console\Application')->run();

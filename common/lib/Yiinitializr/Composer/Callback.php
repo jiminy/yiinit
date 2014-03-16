@@ -187,6 +187,8 @@ class Callback
 
 			Initializer::createRuntimeFolders('assets');
 
+			Initializer::createRuntimeFolders('dist');
+
 			if (is_file(Config::value('yiinitializr.config.console')))
 				$app = \Yii::createConsoleApplication(Config::value('yiinitializr.config.console'));
 			else
