@@ -93,7 +93,7 @@ class Daemon
 		pcntl_signal(SIGTTIN, SIG_IGN);
 		pcntl_signal(SIGHUP,  SIG_IGN);
 
-		call_user_func($callable, $stdin, $stdout, $stderr);
+		return call_user_func($callable, $stdin, $stdout, $stderr);
 	}
 
 	/**
@@ -127,7 +127,7 @@ class Daemon
 	/**
 	 * Kills a daemon process specified by its PID file.
 	 *
-	 * @param $file  Daemon PID file
+	 * @param string $file  Daemon PID file
 	 * @param bool $delete Flag to delete PID file after killing
 	 * @return bool  True on success, false otherwise
 	 * @throws \Exception

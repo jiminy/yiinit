@@ -97,7 +97,10 @@ class ArrayX
 	 */
 	public static function set(&$array, $key, $value)
 	{
-		if (is_null($key)) return $array = $value;
+		if (is_null($key)) {
+            $array = $value;
+            return;
+        }
 
 		$keys = explode('.', $key);
 
@@ -173,7 +176,7 @@ class ArrayX
 	 * </code>
 	 *
 	 * @param  array $array
-	 * @param  Closure $callback
+	 * @param  \Closure $callback
 	 * @param  mixed $default
 	 * @return mixed
 	 */
@@ -184,7 +187,7 @@ class ArrayX
 			if (call_user_func($callback, $key, $value)) return $value;
 		}
 
-		return value($default);
+		return $default;
 	}
 
 	/**
